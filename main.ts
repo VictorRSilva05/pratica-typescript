@@ -1,7 +1,10 @@
-let name: string = 'Victor';
-let age: number = 21;
-let isLearningTypescript: boolean = true;
+console.log(calculatedBirthYear(21));
 
-console.log(`${name} is ${age} years old and it is ${isLearningTypescript} that he is learning TypeScript.`)
+function calculatedBirthYear(age: number) : number{
+    const currentYear: number = 2026;
+    let birthYear: number =  currentYear - age;
+
+    return birthYear;
+}
 
 export {};
